@@ -6,25 +6,25 @@ function Detail() {
     return (
         <Container>
             <Background>
-                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4F39B7E16726ECF419DD7C49E011DD95099AA20A962B0B10AA1881A70661CE45/scale?width=1440&aspectRatio=1.78&format=jpeg" />
+                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4F39B7E16726ECF419DD7C49E011DD95099AA20A962B0B10AA1881A70661CE45/scale?width=1440&aspectRatio=1.78&format=jpeg" alt="" />
             </Background>
             <ImageTitle>
-                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7AEE1F05D10FC37C873176AAA26F777FC1B71E7A6563F36C6B1B497CAB1CEC2/scale?width=1440&aspectRatio=1.78" />
+                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7AEE1F05D10FC37C873176AAA26F777FC1B71E7A6563F36C6B1B497CAB1CEC2/scale?width=1440&aspectRatio=1.78" alt="" />
             </ImageTitle>
             <Controls>
                 <PlayButton>
-                    <img src="/images/play-icon-black.png" />
+                    <img src="/images/play-icon-black.png" alt="" />
                     <span>Play</span>
                 </PlayButton>
                 <TrailerButton>
-                    <img src="/images/play-icon-white.png" />
+                    <img src="/images/play-icon-white.png" alt="" />
                     <span>Trailer</span>
                 </TrailerButton>
                 <AddButton>
                     <span>+</span>
                 </AddButton>
                 <GroupWatchButton>
-                    <img src="/images/group-icon.png" />
+                    <img src="/images/group-icon.png" alt="" />
                 </GroupWatchButton>
             </Controls>
             <SubTitle>
@@ -67,6 +67,7 @@ const ImageTitle = styled.div`
     min-height:170px;
     width:35vw;
     min-width:200px;
+    marin-top:60px;
 
     img{
         width:100%;
@@ -142,4 +143,5 @@ const Description = styled.div`
     font-size:20px;
     margin-top:16px;
     color:rgb(249,249,249);
+    max-width:760px;
 `

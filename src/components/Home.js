@@ -1,15 +1,30 @@
 import React from 'react'
 import styled from 'styled-components'
 import ImgSlider from './ImgSlider'
-import Movies from './Movies'
+import Recommendation from './Recommendation'
+import NewDisney from './NewDisney'
 import Viewers from './Viewers'
+import Originals from './Originals'
+import Trending from './Trending'
+// import db from '../firebase'
 
 function Home() {
+    /* useEffect(() => {
+        db.collection("movie").onSnapshot((snapshot) => {
+            let tempMoveis = snapshot.docs.map((docs) => {
+                return { id: docs.id, ...docs.data() }
+            })
+        })
+    }, []) */
+
     return (
         <Container>
             <ImgSlider />
             <Viewers />
-            <Movies />
+            <Recommendation />
+            <NewDisney />
+            <Originals />
+            <Trending />
         </Container>
     )
 }

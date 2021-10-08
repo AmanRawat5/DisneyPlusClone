@@ -1,36 +1,38 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 function Header() {
 
     return (
         <Nav>
             <Logo src="/images/logo.svg" />
             <NavMenu>
-                <a>
-                    <img src="images/home-icon.svg" />
+                <Link t0="/">
+                    <img src="images/home-icon.svg" alt="" />
                     <span>HOME</span>
-                </a>
-                <a>
-                    <img src="images/search-icon.svg" />
+                </Link>
+                <Link t0="/">
+                    <img src="images/search-icon.svg" alt="" />
                     <span>SEARCH</span>
-                </a>
-                <a>
-                    <img src="images/watchlist-icon.svg" />
+                </Link>
+                <Link t0="/">
+                    <img src="images/watchlist-icon.svg" alt="" />
                     <span>WATCHLIST</span>
-                </a>
-                <a>
-                    <img src="images/original-icon.svg" />
+                </Link>
+                <Link t0="/">
+                    <img src="images/original-icon.svg" alt="" />
                     <span>ORIGINALS</span>
-                </a>
-                <a>
-                    <img src="images/movie-icon.svg" />
+                </Link>
+                <Link t0="/">
+                    <img src="images/movie-icon.svg" alt="" />
                     <span>MOVIES</span>
-                </a>
-                <a>
-                    <img src="images/series-icon.svg" />
+                </Link>
+                <Link t0="/">
+                    <img src="images/series-icon.svg" alt="" />
                     <span>SERIES</span>
-                </a>
+                </Link>
             </NavMenu>
+            {/* <Login>Login</Login> */}
             <UserImg src="/images/viewers-disney.png" />
 
         </Nav>
@@ -47,7 +49,7 @@ const Nav = styled.nav
     display:flex;
     align-item:center;
     padding:0;
-    overflow-x:hidden;
+    overflow-x:hidden; 
 `
 const Logo = styled.img
     `
@@ -63,6 +65,8 @@ const NavMenu = styled.div
         align-items:center;
         padding:0 12px;
         cursor:pointer;
+        text-decoration:none;
+        color:white;
 
         img{
            height:20px; 
@@ -102,3 +106,12 @@ const UserImg = styled.img
     border-radius:50%;
     cursor:pointer;
 `
+
+
+
+/* background-color:rgba(0,0,0,0.6);
+padding:8px 16px;
+text-decoration:uppercase;
+letter-spacing:1.5rem;
+border:1px solid #f9f9f9;
+border-radius:4px; */
